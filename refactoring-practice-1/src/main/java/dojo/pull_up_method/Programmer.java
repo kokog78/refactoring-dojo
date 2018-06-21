@@ -6,8 +6,8 @@ public class Programmer extends Employee {
 		super(name);
 	}
 
-	public void printDescription() {
-		System.out.println("Programmer: " + getName());
+	public String getDescription() {
+		return "Programmer: " + getName();
 	}
 	
 }

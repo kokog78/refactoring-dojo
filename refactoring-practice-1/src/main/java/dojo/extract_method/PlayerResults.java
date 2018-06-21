@@ -12,16 +12,18 @@ public class PlayerResults {
 		this.player3Results = player3Results;
 	}
 
-	public void printAllPlayersResult() {
-		printHeader();
-		System.out.println("Player 1 Result is " + player1Results + " points.");
-		System.out.println("Player 2 Result is " + player2Results + " points.");
-		System.out.println("Player 3 Result is " + player3Results + " points.");
+	public String getAllPlayersResult() {
+		StringBuilder builder = new StringBuilder();
+		printHeader(builder);
+		builder.append("Player 1 has " + player1Results + " points.\n");
+		builder.append("Player 2 has " + player2Results + " points.\n");
+		builder.append("Player 3 has " + player3Results + " points.\n");
+		return builder.toString();
 	}
 	
-	private void printHeader() {
-		System.out.println("Game Results");
-		System.out.println("------------");
+	private void printHeader(StringBuilder builder) {
+		builder.append("Game Results\n");
+		builder.append("------------\n");
 	}
 	
 }

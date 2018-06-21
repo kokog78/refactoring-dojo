@@ -6,8 +6,8 @@ public class Tester extends Employee {
 		super(name);
 	}
 
-	public void printDescription() {
-		System.out.println("Tester: " + getName());
+	public String getDescription() {
+		return "Tester: " + getName();
 	}
 	
 }
