@@ -8,7 +8,7 @@ public class LifelineSite extends Site {
 	
 	public double getBillableAmount() {
 		double base = getUnits() * getRate() * 0.5;
-		double tax = base * TAX_RATE;
+		double tax = base * TAX_RATE * 1.2;
 		return base + tax;
 	}
 

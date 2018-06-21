@@ -10,6 +10,9 @@ public class DiscountCalculator {
 		this.itemPrice = itemPrice;
 	}
 	
+	/*
+	 * A basePrice és a discountFactor változókat lekérdező függvényekkel helyettesíthetjük.
+	 */
 	public double getPrice() {
 		double basePrice = quantity * itemPrice;
 		double discountFactor;

@@ -11,6 +11,6 @@ public class SiteTest {
 		ResidentalSite residentalSite = new ResidentalSite(3, 1000.0);
 		LifelineSite lifelineSite = new LifelineSite(3, 1000.0);
 		assertThat(residentalSite.getBillableAmount()).isEqualTo(3810.0);
-		assertThat(lifelineSite.getBillableAmount()).isEqualTo(1905.0);
+		assertThat(lifelineSite.getBillableAmount()).isEqualTo(1986.0);
 	}
 }

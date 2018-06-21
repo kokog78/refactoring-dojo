@@ -2,6 +2,9 @@ package dojo.substitute_algorithm;
 
 public class PersonFinder {
 
+	/*
+	 * Cseréljük le az algoritmust egy jobbra!
+	 */
 	public String foundPerson(String ... people) {
 		for (int i = 0; i < people.length; i++) {
 			if (people[i].equals("Don")) {
