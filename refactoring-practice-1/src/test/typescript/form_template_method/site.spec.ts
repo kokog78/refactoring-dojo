@@ -1,7 +1,7 @@
 import {ResidentalSite} from "../../../main/typescript/form_template_method/residental-site.js";
 import {LifelineSite} from "../../../main/typescript/form_template_method/lifeline-site.js";
 
-describe('Site', () => {
+describe('form_template_method: Site', () => {
 
     it('getBillableAmount_should_get_billable_amount_correctly', () => {
         let residentalSite: ResidentalSite = new ResidentalSite(3, 1000.0);

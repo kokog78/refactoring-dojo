@@ -1,7 +1,7 @@
 import {ChargeCalculator} from "../../../main/typescript/extract_interface/charge-calculator.js";
 import {Employee} from "../../../main/typescript/extract_interface/employee.js";
 
-describe('ChargeCalculator', () => {
+describe('extract_interface: ChargeCalculator', () => {
 
     it('calculateCharge_should_calculate_charge_correctly', () => {
         let calculator: ChargeCalculator = new ChargeCalculator();

@@ -1,6 +1,6 @@
 import {PlayerResults} from "../../../main/typescript/extract_method/player-results.js";
 
-describe("PlayerResults", () => {
+describe("extract_method: PlayerResults", () => {
 
     it('getAllPlayersResult_should_collect_player_results', () => {
         let results: PlayerResults = new PlayerResults(100, 200, 300);

@@ -1,7 +1,7 @@
 import {Course} from "../../../main/typescript/encapsulate_collection/course.js";
 import {Teacher} from "../../../main/typescript/encapsulate_collection/teacher.js";
 
-describe('Teacher', () => {
+describe('encapsulate_collection: Teacher', () => {
 
     it('should_find_advanced_courses', () => {
         let java: Course = new Course("Java Programming", false);

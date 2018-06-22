@@ -1,7 +1,7 @@
 import {Employee} from "../../../main/typescript/extract_subclass/employee.js";
 import {JobItem} from "../../../main/typescript/extract_subclass/job-item.js";
 
-describe("JobItem", () => {
+describe("extract_subclass: JobItem", () => {
 
     it('getTotalPrice_should_calculate_price_correctly', () => {
         let john: Employee = new Employee(10.0);

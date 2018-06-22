@@ -1,6 +1,6 @@
 import {ChargeCalculator} from '../../../main/typescript/decompose_conditional/charge-calculator.js';
 
-describe('ChargeCalculator', () => {
+describe('decompose_conditional: ChargeCalculator', () => {
 
     it('should_calculate_charge_correctly', () => {
         let calculator: ChargeCalculator = new ChargeCalculator(10, 9, 20);

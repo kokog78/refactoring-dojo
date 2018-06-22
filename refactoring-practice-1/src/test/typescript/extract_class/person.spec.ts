@@ -1,6 +1,6 @@
 import {Person} from "../../../main/typescript/extract_class/person.js";
 
-describe('Person', () => {
+describe('extract_class: Person', () => {
 
     it('getOfficeTelephoneNumber_should_get_office_telephone_number', () => {
         let person: Person = new Person();
