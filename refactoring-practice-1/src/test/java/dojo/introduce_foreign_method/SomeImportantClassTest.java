@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 public class SomeImportantClassTest {
 
-	@Test
+	@Test @org.junit.Test
 	public void getEndDate_should_return_next_day() {
 		SomeImportantClass some = new SomeImportantClass(date(1));
 		assertThat(some.getEndDate()).isEqualTo(date(2));

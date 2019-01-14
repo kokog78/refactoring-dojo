@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 public class DiscountCalculatorTest {
 
-	@Test
+	@Test @org.junit.Test
 	public void getPrice_calculates_price_correctly() {
 		DiscountCalculator calculator1 = new DiscountCalculator(100, 9.0);
 		assertThat(calculator1.getPrice()).isEqualTo(882.0);

@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 public class AccountTest {
 
-	@Test
+	@Test @org.junit.Test
 	public void getBankCharge_should_calculate_bank_charge_correctly() {
 		Account account1 = new Account(AccountType.SIMPLE);
 		

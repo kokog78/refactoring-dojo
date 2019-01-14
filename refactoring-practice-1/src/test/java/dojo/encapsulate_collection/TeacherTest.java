@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 public class TeacherTest {
 
-	@Test
+	@Test @org.junit.Test
 	public void should_find_advanced_courses() {
 		Course java = new Course("Java Programming", false);
 		Course advancedJava = new Course("Advanced Java Programming", true);

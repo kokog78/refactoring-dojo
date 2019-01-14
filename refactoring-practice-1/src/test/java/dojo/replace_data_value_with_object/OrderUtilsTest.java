@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 public class OrderUtilsTest {
 
-	@Test
+	@Test @org.junit.Test
 	public void getNumberOfOrdersFor_should_calculate_numbers_of_order_correctly() {
 		assertThat(OrderUtils.getNumberOfOrdersFor("Bob", new Order("Bob"), new Order("Jane"))).isEqualTo(1);
 	}

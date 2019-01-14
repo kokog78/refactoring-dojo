@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 public class EmployeeTest {
 
-	@Test
+	@Test @org.junit.Test
 	public void getBaseSalary_should_return_the_correct_salary() {
 		Employee engineer = new Employee(Employee.ENGINEER);
 		Employee salesman = new Employee(Employee.SALESMAN);

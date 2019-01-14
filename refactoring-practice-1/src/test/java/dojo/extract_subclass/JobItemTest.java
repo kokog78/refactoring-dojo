@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 public class JobItemTest {
 
-	@Test
+	@Test @org.junit.Test
 	public void getTotalPrice_should_calculate_price_correctly() {
 		Employee john = new Employee(10.0);
 		

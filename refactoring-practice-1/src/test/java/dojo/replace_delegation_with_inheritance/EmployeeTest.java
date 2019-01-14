@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 public class EmployeeTest {
 
-	@Test
+	@Test @org.junit.Test
 	public void toString_should_return_last_name() {
 		Person bob = new Person();
 		Employee bobEmployee = new Employee(bob);

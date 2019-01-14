@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 public class ChargeCalculatorTest {
 
-	@Test
+	@Test @org.junit.Test
 	public void calculateCharge_should_calculate_charge_correctly() {
 		ChargeCalculator calculator = new ChargeCalculator();
 		Employee employee = new Employee();

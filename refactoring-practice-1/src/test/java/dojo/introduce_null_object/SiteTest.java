@@ -8,7 +8,7 @@ public class SiteTest {
 
 	private Site site = new Site();
 	
-	@Test
+	@Test @org.junit.Test
 	public void getCustomerName_should_return_right_customer_name() {
 		site.setCustomer(new Customer("Bob", BillingPlan.PREMIUM));
 		assertThat(site.getCustomerName()).isEqualTo("Bob");
@@ -17,7 +17,7 @@ public class SiteTest {
 		assertThat(site.getCustomerName()).isEqualTo("occupant");
 	}
 	
-	@Test
+	@Test @org.junit.Test
 	public void getCustomerName_should_return_right_billing_plan() {
 		site.setCustomer(new Customer("Bob", BillingPlan.PREMIUM));
 		assertThat(site.getBillingPlan()).isEqualTo(BillingPlan.PREMIUM);
@@ -26,7 +26,7 @@ public class SiteTest {
 		assertThat(site.getBillingPlan()).isEqualTo(BillingPlan.BASIC);
 	}
 	
-	@Test
+	@Test @org.junit.Test
 	public void getCustomerName_should_return_right_delinquent_weeks() {
 		site.setCustomer(new Customer("Bob", BillingPlan.PREMIUM));
 		assertThat(site.getWeeksDelinquent()).isEqualTo(1);

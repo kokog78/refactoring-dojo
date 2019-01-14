@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 public class PersonTest {
 
-	@Test
+	@Test @org.junit.Test
 	public void should_access_department_manager() {
 		Person bob = new Person();
 		Person john = new Person();

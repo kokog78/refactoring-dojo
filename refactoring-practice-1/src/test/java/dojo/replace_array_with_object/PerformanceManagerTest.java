@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 public class PerformanceManagerTest {
 
-	@Test
+	@Test @org.junit.Test
 	public void getPerformanceOf_should_return_number_of_wins() {
 		PerformanceManager manager = new PerformanceManager();
 		

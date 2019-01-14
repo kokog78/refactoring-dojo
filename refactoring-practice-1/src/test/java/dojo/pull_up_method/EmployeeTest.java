@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 public class EmployeeTest {
 
-	@Test
+	@Test @org.junit.Test
 	public void getDescription_should_return_description() {
 		Tester tester = new Tester("Alice");
 		Programmer programmer = new Programmer("Bob");

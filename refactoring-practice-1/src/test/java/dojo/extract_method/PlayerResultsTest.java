@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 public class PlayerResultsTest {
 
-	@Test
+	@Test @org.junit.Test
 	public void getAllPlayersResult_should_collect_player_results() {
 		PlayerResults results = new PlayerResults(100, 200, 300);
 		assertThat(results.getAllPlayersResult())

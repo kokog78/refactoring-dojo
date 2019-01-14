@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 public class AccountTest {
 
-	@Test
+	@Test @org.junit.Test
 	public void getFlowBetween_should_calculate_flow_value_correctly() {
 		Account account = new Account(
 				new Entry(date(1), 10.0),

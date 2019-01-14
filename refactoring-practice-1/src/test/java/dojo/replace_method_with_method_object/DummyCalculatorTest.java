@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 public class DummyCalculatorTest {
 
-	@Test
+	@Test @org.junit.Test
 	public void computeGamma_should_compute_gamma_correctly() {
 		DummyCalculator calculator = new DummyCalculator();
 		assertThat(calculator.computeGamma(1, 2, 3)).isEqualTo(697);

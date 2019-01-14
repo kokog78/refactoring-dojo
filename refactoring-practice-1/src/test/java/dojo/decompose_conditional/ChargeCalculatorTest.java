@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 public class ChargeCalculatorTest {
 
-	@Test
+	@Test @org.junit.Test
 	public void calculateChargeForMonth_should_calculate_charge_correctly() {
 		ChargeCalculator calculator = new ChargeCalculator(10, 9, 20);
 		assertThat(calculator.calculateChargeForMonth(0, 10)).isEqualTo(110.0);

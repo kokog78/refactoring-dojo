@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 public class PersonFinderTest {
 	
-	@Test
+	@Test @org.junit.Test
 	public void foundPerson_should_find_person() {
 		PersonFinder finder = new PersonFinder();
 		assertThat(finder.foundPerson()).isNull();

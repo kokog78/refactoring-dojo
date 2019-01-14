@@ -8,7 +8,7 @@ public class ParserTest {
 
 	private Parser parser = new Parser();
 	
-	@Test
+	@Test @org.junit.Test
 	public void test_good_address() throws Exception {
 		test("2040 Budaörs Valami utca 5.", "2040", "Budaörs", "Valami utca 5.");
 		test("Budaörs 2040 Valami utca 5.", "2040", "Budaörs", "Valami utca 5.");
@@ -16,7 +16,7 @@ public class ParserTest {
 		test("Valami utca 5. 2040 Budaörs", "2040", "Budaörs", "Valami utca 5.");
 	}
 	
-	@Test
+	@Test @org.junit.Test
 	public void test_bad_address() throws Exception {
 		test("Valami 2040 Budaörs utca 5.", "2040", "Budaörs", "Valami utca 5.");
 		test("Valami 2040 utca 5. Budaörs", "2040", "Budaörs", "Valami utca 5.");
@@ -25,7 +25,7 @@ public class ParserTest {
 		test("2040 Valami Budaörs utca 5.", "2040", "Budaörs", "Valami utca 5.");
 	}
 	
-	@Test
+	@Test @org.junit.Test
 	public void test_duplicated_parts() throws Exception {
 		test("2040 Budaörs Valami utca 2040", "2040", "Budaörs", "Valami utca 2040");
 		test("2040 Budaörs 2040 Valami utca", "2040", "Budaörs", "2040 Valami utca");
@@ -34,13 +34,13 @@ public class ParserTest {
 		test("Budaörs Kis Budaörs utca 5. 2040", "2040", "Budaörs", "Kis Budaörs utca 5.");
 	}
 	
-	@Test
+	@Test @org.junit.Test
 	public void test_numbers() throws Exception {
 		test("123 1234", "1234", null, "123");
 		test("1234 123", "1234", null, "123");
 	}
 	
-	@Test
+	@Test @org.junit.Test
 	public void test_address_with_whitespace() throws Exception {
 		test(" 2040", "2040", null, null);
 		test("\t2040", "2040", null, null);
