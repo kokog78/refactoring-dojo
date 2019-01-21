@@ -7,14 +7,35 @@ import org.testng.annotations.Test;
 public class JobItemTest {
 
 	@Test @org.junit.Test
-	public void getTotalPrice_should_calculate_price_correctly() {
+	public void getTotalPrice_should_calculate_price_for_normal_job() {
+		JobItem job = new JobItem(20.0, 10, null, false);
+		
+		assertThat(job.getQuantity()).isEqualTo(10);
+		assertThat(job.getEmployee()).isNull();
+		assertThat(job.getTotalPrice()).isEqualTo(200.0);
+	}
+	
+	@Test @org.junit.Test
+	public void getTotalPrice_should_calculate_price_for_labor_job() {
 		Employee john = new Employee(10.0);
 		
-		JobItem j1 = new JobItem(20.0, 10, john, false);
-		assertThat(j1.getTotalPrice()).isEqualTo(200.0);
+		JobItem job = new JobItem(20.0, 11, john, true);
 		
-		JobItem j2 = new JobItem(20.0, 10, john, true);
-		assertThat(j2.getTotalPrice()).isEqualTo(100.0);
+		assertThat(job.getQuantity()).isEqualTo(11);
+		assertThat(job.getEmployee()).isNotNull();
+		assertThat(job.getTotalPrice()).isEqualTo(110.0);
+	}
+	
+	// ez a teszt az új struktúrában fölöslegessé válik
+	@Test @org.junit.Test
+	public void getTotalPrice_should_calculate_price_for_normal_job_with_employee() {
+		Employee john = new Employee(10.0);
+		
+		JobItem job = new JobItem(20.0, 10, john, false);
+		
+		assertThat(job.getQuantity()).isEqualTo(10);
+		assertThat(job.getEmployee()).isNotNull();
+		assertThat(job.getTotalPrice()).isEqualTo(200.0);
 	}
 	
 }

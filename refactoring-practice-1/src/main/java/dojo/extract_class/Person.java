@@ -2,6 +2,7 @@ package dojo.extract_class;
 
 /*
  * Emeljük ki a telefonszámot egy külön osztályba!
+ * Előtte írjuk meg a szükséges teszteket getOfficeAreaCode, getOfficeNumber metódusok számára!
  */
 public class Person {
 

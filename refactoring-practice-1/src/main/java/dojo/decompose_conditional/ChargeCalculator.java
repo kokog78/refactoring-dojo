@@ -15,6 +15,7 @@ public class ChargeCalculator {
 		this.winterServiceCharge = winterServiceCharge;
 	}
 	
+	// Mind a feltételt, mint az egyes esetek műveleteit tegyük ki külön privát metódusokba!
 	public double calculateChargeForMonth(int month, int quantity) {
 		double charge = 0.0;
 		if (month < SUMMER_START_MONTH || month > SUMMER_END_MONTH) {
