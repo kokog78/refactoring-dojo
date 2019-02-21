@@ -25,7 +25,8 @@ public class PriceCalculator {
 	
 	/*
 	 * Ebből a metódusból távolítsuk el mindkét paramétert úgy, hogy helyettesítjük
-	 * őket egy getBasePrice és egy getDiscountLevel metódushívással!
+	 * őket egy getDiscountLevel és egy getBasePrice metódushívással!
+	 * A refaktorálás végén ezt a metódust akár be is olvaszthatjuk a getPrice metódusba.
 	 */
 	private double getDiscountedPrice(double basePrice, int discountLevel) {
 		if (discountLevel == 1) {
