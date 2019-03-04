@@ -8,7 +8,7 @@ public class Person {
 	public static final int AB = 3;
 	
 	/*
-	 * Ehelyett a primitív érték helyett készítsünk egy BloodGroup nevű osztályt!
+	 * Ehelyett a primitív érték helyett készítsünk egy BloodGroup nevű osztályt (enum-ot)!
 	 */
 	private final int bloodGroup;
 

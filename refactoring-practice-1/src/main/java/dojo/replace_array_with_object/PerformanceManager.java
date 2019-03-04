@@ -17,6 +17,16 @@ public class PerformanceManager {
 		});
 	}
 	
+	/*
+	 * Másik metódus variáns - ezzel a refaktorálás folyamata és eredménye picit más lesz.
+	private void registerWins(String name, int wins) {
+		String[] performance = new String[2];
+		performance[0] = name;
+		performance[1] = Integer.toString(wins);
+		performances.add(performance);
+	}
+	*/
+	
 	public int getWinsOf(String name) {
 		for (String[] performance : performances) {
 			if (performance[0].equals(name)) {
