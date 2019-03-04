@@ -3,6 +3,10 @@ package dojo.introduce_null_object;
 /*
  * A null vizsgálatok helyett hozzunk létre egy NullCustomer osztályt, és az adjon vissza olyan értékeket, amiket
  * a null vizsgálatok eredményei adtak vissza.
+ * Lépések:
+ * - NullCustomer osztály és Customer.isNull metódus létrehozása
+ * - NullCustomer példány és Customer.isNull metódusok behelyettesítése
+ * - Feltételes utasítások megszüntetése, NullCustomer metódusainak implementálásával
  */
 public class Site {
 

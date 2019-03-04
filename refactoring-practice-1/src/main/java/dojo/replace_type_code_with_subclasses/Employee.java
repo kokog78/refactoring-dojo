@@ -2,6 +2,10 @@ package dojo.replace_type_code_with_subclasses;
 
 /*
  * Ebből az osztályból származtassunk le 3 alosztályt, minden típuskód érték számára egyet!
+ * Lépések:
+ * - a típuskód önbetokozása (konstruktor helyett gyártófüggvénnyel),
+ * - az alosztályok létrehozása (getType metódus felülírásával)
+ * - a típuskód eltávolítása, getBaseSalary metódus implementálása alosztályonként
  */
 public class Employee {
 
