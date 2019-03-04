@@ -5,7 +5,7 @@ public class OrderUtils {
 	public static int getNumberOfOrdersFor(String customerName, Order ... orders) {
 		int result = 0;
 		for (Order order : orders) {
-			if (order.getCustomerName().equals(customerName)) {
+			if (order.getCustomer().equals(customerName)) {
 				result++;
 			}
 		}

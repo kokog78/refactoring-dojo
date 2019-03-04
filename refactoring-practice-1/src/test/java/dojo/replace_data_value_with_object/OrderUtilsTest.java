@@ -8,6 +8,7 @@ public class OrderUtilsTest {
 
 	@Test @org.junit.Test
 	public void getNumberOfOrdersFor_should_calculate_numbers_of_order_correctly() {
-		assertThat(OrderUtils.getNumberOfOrdersFor("Bob", new Order("Bob"), new Order("Jane"))).isEqualTo(1);
+		assertThat(OrderUtils.getNumberOfOrdersFor("Bob", new Order("Bob", 1), new Order("Jane", 2)))
+			.isEqualTo(1);
 	}
 }
