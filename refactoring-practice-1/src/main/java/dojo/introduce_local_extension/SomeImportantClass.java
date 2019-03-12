@@ -7,6 +7,9 @@ public class SomeImportantClass {
 
 	private final Date startDate;
 	
+	/*
+	 * A konstruktort nem változtathatjuk meg, mert akkor a klienst is át kellene írnunk.
+	 */
 	public SomeImportantClass(Date startDate) {
 		super();
 		this.startDate = startDate;
